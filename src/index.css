@@ -71,3 +71,74 @@ body {
   font-size: calc(var(--index) * 2.75);
   letter-spacing: calc(var(--index) / 2.5);
 }
+
+.img-layer {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  will-change: transform;
+  z-index: 2;
+  transition: var(--transition);
+}
+
+.layer-base {
+  transform: translate3d(0, calc(var(--scrollTop)/ 1.6), 0);
+  z-index: 0;
+}
+
+.layer-mid {
+  transform: translate3d(0, calc(var(--scrollTop)/ 2.5), 0);
+}
+
+.layer-front {
+  transform: translate3d(0, calc(var(--scrollTop)/ 5.6), 0);
+}
+
+.article-main {
+  --mainarticle-transform: translate3d(0, calc(var(--scrollTop)/ 7.6));
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  color: var(--text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  top: -2px;
+  z-index: 10;
+}
+
+.m-article-content {}
+
+.m-header {
+  text-transform: uppercase;
+  font-size: calc(var(--index) * 2);
+  letter-spacing: calc(var(--index) / 7.6);
+  transform: var(--mainarticle-transform);
+  transition: var(--transition);
+  will-change: transform;
+}
+
+.m-paragraph {
+  max-width: calc(var(--index) * 30);
+  font-size: calc(var(--index) * 0.9);
+  margin-top: calc(var(--index) * 1.25);
+  transform: var(--mainarticle-transform);
+  transition: var(--transition);
+  will-change: transform;
+}
+
+.content {
+  will-change: transform;
+}
+
+.copy {
+  position: absolute;
+  bottom: calc(var(--index) * 2.5);
+  opacity: 0.5;
+  font-size: calc(var(--index) * 0.75);
+  letter-spacing: calc(var(--index) /37.6);
+}
