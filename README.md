@@ -2,7 +2,7 @@
 
 https://github.com/N1k0l1n/parallax/assets/97979235/e0b97cd0-6971-4ea2-9c2c-8c114684d3ad
 
-# Getting Started with Create React App
+# Getting Started with Create React App 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
